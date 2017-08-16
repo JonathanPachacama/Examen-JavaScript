@@ -1,0 +1,39 @@
+
+
+<div class="container" style="background-color: black">
+  <div class="cabecera" style="position: relative">
+    <!-- 1 fila-->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="bg" id ="main-creative" >
+          <img class="concord-img"src="">
+        </div>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <br>
+    <br>
+
+    <div class="row">
+      <div  *ngFor="let serie of series; let i=index;">
+        <br>
+          <div class="card" style="width: 20rem; height: 40rem">
+
+            <div class="card-block">
+              <h4  class="card-title">Auto</h4>
+
+              <app-noticias [noticias]="serie"></app-noticias>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
