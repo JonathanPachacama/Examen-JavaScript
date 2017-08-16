@@ -2,7 +2,7 @@ export interface NoticiasInterfaz{
 
 
     author?: string,
-    title?: number,
+    title?: string,
     urlToImage?: string,
 
 
