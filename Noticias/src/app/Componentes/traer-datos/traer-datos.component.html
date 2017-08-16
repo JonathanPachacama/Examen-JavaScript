@@ -1,0 +1,38 @@
+<div class="container" style="background-color: black">
+  <div class="cabecera" style="position: relative">
+    <!-- 1 fila-->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="bg" id ="main-creative" >
+          <img class="concord-img"src="">
+        </div>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+  <br>
+
+<div class="container">
+<div class="row">
+  <br>
+  <br>
+  <div  class="col-md-4" *ngFor="let serie of series;let indice = index;">
+
+    <br>
+    <br>
+      <div class="card" style="width: 20rem; height: 45rem">
+        <img class="card-img-top" src="{{serie.urlToImage}}" alt="Card image cap">
+        <div class="card-block">
+          <h4  class="card-title">Noticia</h4>
+
+          <p><strong>Titulo       :</strong> {{serie.title}}</p>
+          <p><strong>Autor      :</strong>{{serie.author}}</p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

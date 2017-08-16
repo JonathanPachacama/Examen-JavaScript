@@ -6,20 +6,24 @@ import {InicioComponent} from "./Componentes/inicio/inicio.component";
 import {NoticiasComponent} from "./Componentes/noticias/noticias.component";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
+import {RoutesAppModules} from "./Routes";
+import { TraerDatosComponent } from './Componentes/traer-datos/traer-datos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    TraerDatosComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    RoutesAppModules
   ],
   providers: [],
-  bootstrap: [InicioComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
