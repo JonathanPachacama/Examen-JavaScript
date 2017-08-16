@@ -5,7 +5,7 @@ import {TraerDatosComponent} from "./Componentes/traer-datos/traer-datos.compone
 
 export const routes: Routes = [
   {
-    path: 'inicio',
+    path: 'noticias-desde-la-api',
     component: InicioComponent,
 
   },

@@ -4,31 +4,31 @@
     <div class="row">
       <div class="col-md-6">
         <div class="bg" id ="main-creative" >
-          <img class="concord-img"src="">
+          <br>
+          <br>
+          <img class="concord-img"src="http://www.etesi.com/wp-content/uploads/2017/04/noticias_web.jpg">
         </div>
       </div>
       <div class="col-md-6"></div>
     </div>
   </div>
   <br>
-
+  <h1>Datos desde Node-Red</h1>
 <div class="container">
-<div class="row">
+    <div class="row">
   <br>
   <br>
   <div  class="col-md-4" *ngFor="let noticia of noticias;let indice = index;">
-
     <br>
     <br>
       <div class="card" style="width: 20rem; height: 45rem">
         <img class="card-img-top" src="{{noticia.urlToImage}}" alt="Card image cap">
         <div class="card-block">
           <h4  class="card-title">Noticia</h4>
-
-          <p><strong>Titulo       :</strong> {{noticia.title}}</p>
-          <p><strong>Autor      :</strong>{{noticia.author}}</p>
-
-
+          <p><strong>Titulo: </strong> {{noticia.title}}</p>
+          <p><strong>Autor: </strong>{{noticia.author}}</p>
+          <br>
+          <br>
           <button  class="btn btn-danger" (click)="eliminarNoticiaNodeBackend(noticia,noticia._id);eliminarNoticiaFrontEnd($event)">Eliminar</button>
         </div>
       </div>
