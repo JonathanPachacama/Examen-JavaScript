@@ -16,19 +16,20 @@
 <div class="row">
   <br>
   <br>
-  <div  class="col-md-4" *ngFor="let serie of series;let indice = index;">
+  <div  class="col-md-4" *ngFor="let noticia of noticias;let indice = index;">
 
     <br>
     <br>
       <div class="card" style="width: 20rem; height: 45rem">
-        <img class="card-img-top" src="{{serie.urlToImage}}" alt="Card image cap">
+        <img class="card-img-top" src="{{noticia.urlToImage}}" alt="Card image cap">
         <div class="card-block">
           <h4  class="card-title">Noticia</h4>
 
-          <p><strong>Titulo       :</strong> {{serie.title}}</p>
-          <p><strong>Autor      :</strong>{{serie.author}}</p>
+          <p><strong>Titulo       :</strong> {{noticia.title}}</p>
+          <p><strong>Autor      :</strong>{{noticia.author}}</p>
 
 
+          <button  class="btn btn-danger" (click)="eliminarNoticiaNodeBackend(noticia,noticia._id);eliminarNoticiaFrontEnd($event)">Eliminar</button>
         </div>
       </div>
     </div>
@@ -36,3 +37,4 @@
 
 </div>
 
+</div>
